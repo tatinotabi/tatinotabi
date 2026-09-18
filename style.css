@@ -57,7 +57,7 @@ h2{
 header{
     position:fixed;
     width:100%;
-	height:150px;
+	height:100px;
     top:0;
     z-index:1000;
     backdrop-filter:blur(12px);
@@ -79,7 +79,7 @@ header{
 
 .logo img {
     display: block;
-    width: 150px;
+    width: 100px;
     height: auto;
 }
 
@@ -675,4 +675,3 @@ footer p{
         padding:70px 0;
     }
 }
-
