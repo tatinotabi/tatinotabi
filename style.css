@@ -71,11 +71,15 @@ header{
     height:80px;
 }
 
-.logo{
-    font-family:'Cormorant Garamond',serif;
-    font-size:2rem;
-    color:var(--gold);
-    font-weight:600;
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    display: block;
+    width: 150px;
+    height: auto;
 }
 
 nav ul{
@@ -478,7 +482,7 @@ footer p{
             rgba(190,145,155,.15),
             rgba(70,80,60,.15)
         ),
-        url("https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=1000&q=85");
+        url("tati.jpeg");
 
     background-size: cover;
     background-position: center;
