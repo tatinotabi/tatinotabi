@@ -1,1 +1,144 @@
-<h1>Tatinotabi</h1>
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tatinotabi | Joias artesanais em origami</title>
+    <meta name="description" content="Tatinotabi cria joias artesanais em origami inspiradas no Japão: peças leves, coloridas e feitas à mão para oferecer ou usar todos os dias.">
+    <meta name="theme-color" content="#b94b4f">
+    <meta property="og:title" content="Tatinotabi | Joias artesanais em origami">
+    <meta property="og:description" content="Joias em origami inspiradas no Japão, feitas à mão com papel, verniz e cuidado artesanal.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/hero-origami-jewelry.svg">
+    <link rel="canonical" href="https://tatinotabi.github.io/tatinotabi/">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Tatinotabi">
+        <span class="brand-mark">T</span>
+        <span>Tatinotabi</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Principal">
+        <a href="#brand" data-i18n="navBrand">Marca</a>
+        <a href="#collections" data-i18n="navCollections">Coleções</a>
+        <a href="#craft" data-i18n="navCraft">Saber-fazer</a>
+        <a href="#contact" data-i18n="navContact">Contacto</a>
+      </nav>
+
+      <div class="language-switch" aria-label="Language selector">
+        <button class="lang-button is-active" type="button" data-lang="pt">PT</button>
+        <button class="lang-button" type="button" data-lang="en">EN</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="heroEyebrow">Joias artesanais em origami</p>
+          <h1 data-i18n="heroTitle">Pequenas dobras, grandes viagens.</h1>
+          <p class="hero-copy" data-i18n="heroCopy">Tatinotabi transforma papel japonês em brincos, colares e amuletos leves, coloridos e protegidos para acompanhar momentos especiais.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#collections" data-i18n="heroPrimary">Ver coleções</a>
+            <a class="button secondary" href="#contact" data-i18n="heroSecondary">Pedir uma peça</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-label="Illustration of colorful origami jewelry">
+          <img src="assets/images/hero-origami-jewelry.svg" alt="Joias coloridas em origami inspiradas no Japão">
+        </div>
+      </section>
+
+      <section class="section intro" id="brand">
+        <div>
+          <p class="section-kicker" data-i18n="brandKicker">A marca</p>
+          <h2 data-i18n="brandTitle">Elegância japonesa com calor artesanal.</h2>
+        </div>
+        <p data-i18n="brandCopy">Tatinotabi nasce do encontro entre viagem, paciência e papel. Cada peça é dobrada à mão, selada com cuidado e pensada para trazer cor sem perder delicadeza.</p>
+      </section>
+
+      <section class="section collections" id="collections">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="collectionsKicker">Coleções</p>
+          <h2 data-i18n="collectionsTitle">Peças para usar, guardar e oferecer.</h2>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="assets/images/product-cranes.svg" alt="Brincos Tsuru">
+            <div>
+              <p class="tag" data-i18n="productOneTag">Assinatura</p>
+              <h3 data-i18n="productOneTitle">Brincos Tsuru</h3>
+              <p data-i18n="productOneCopy">Dobras clássicas com movimento suave, ideais para uma presença delicada e luminosa.</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="assets/images/product-fan.svg" alt="Colar Sensu">
+            <div>
+              <p class="tag" data-i18n="productTwoTag">Cerimónia</p>
+              <h3 data-i18n="productTwoTitle">Colar Sensu</h3>
+              <p data-i18n="productTwoCopy">Formas inspiradas nos leques japoneses, com papel estampado e acabamento acetinado.</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="assets/images/product-sakura.svg" alt="Amuletos Sakura">
+            <div>
+              <p class="tag" data-i18n="productThreeTag">Presente</p>
+              <h3 data-i18n="productThreeTitle">Amuletos Sakura</h3>
+              <p data-i18n="productThreeCopy">Pequenos talismãs florais para malas, chaves ou embalagens de presente personalizadas.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section craft" id="craft">
+        <div class="craft-image">
+          <img src="assets/images/craft-process.svg" alt="Processo artesanal de dobragem e acabamento">
+        </div>
+        <div class="craft-content">
+          <p class="section-kicker" data-i18n="craftKicker">Saber-fazer</p>
+          <h2 data-i18n="craftTitle">Do papel a uma joia pronta para durar.</h2>
+          <ul class="steps">
+            <li data-i18n="craftStepOne">Seleção de papéis japoneses com padrões vivos e harmoniosos.</li>
+            <li data-i18n="craftStepTwo">Dobragem precisa, montagem leve e ferragens escolhidas com cuidado.</li>
+            <li data-i18n="craftStepThree">Proteção em camadas para reforçar a peça e preservar as cores.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section story">
+        <div class="story-panel">
+          <p class="section-kicker" data-i18n="storyKicker">História</p>
+          <h2 data-i18n="storyTitle">Tati no tabi: uma viagem em cada detalhe.</h2>
+          <p data-i18n="storyCopy">O nome evoca caminho, memória e descoberta. Cada criação procura esse equilíbrio: a alegria de uma peça colorida, a calma de um gesto repetido e a poesia de algo feito devagar.</p>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div>
+          <p class="section-kicker" data-i18n="contactKicker">Contacto</p>
+          <h2 data-i18n="contactTitle">Quer uma peça personalizada?</h2>
+          <p data-i18n="contactCopy">Escreva para encomendas, colaborações ou para escolher padrões e cores. Respondemos com carinho e sugestões adaptadas ao seu momento.</p>
+        </div>
+        <a class="button primary" href="mailto:hello@tatinotabi.com" data-i18n="contactButton">Enviar email</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Tatinotabi</p>
+      <a href="#top" data-i18n="footerTop">Voltar ao topo</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
