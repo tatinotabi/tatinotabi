@@ -74,12 +74,15 @@ header{
 .logo {
     display: flex;
     align-items: center;
+    height: 58px;
 }
 
 .logo img {
     display: block;
-    width: 150px;
-    height: auto;
+    height: 48px;
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
 }
 
 nav ul{
@@ -434,100 +437,137 @@ footer p{
 }
 
 
-/* JOURNEY */
+/* =========================
+   ABOUT
+========================= */
+
+.about-section {
+    background: var(--paper);
+}
+
+.about-intro {
+    max-width: 900px;
+    margin-bottom: 70px;
+}
+
+.about-intro .eyebrow {
+    margin-bottom: 12px;
+}
+
+.about-intro h2 {
+    font-family: var(--serif);
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    font-weight: 500;
+    line-height: 1;
+    margin: 0 0 25px;
+}
+
+.about-intro > p:last-child {
+    max-width: 720px;
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* =========================
+   JOURNEY
+========================= */
 
 .journey-layout {
     display: grid;
-    grid-template-columns: .9fr 1.1fr;
-    gap: 90px;
-    align-items: center;
+    grid-template-columns: 420px minmax(0, 620px);
+    gap: 80px;
+    align-items: start;
+    max-width: 1120px;
+    margin: 0 auto;
 }
 
 .journey-image {
     position: relative;
-    min-height: 620px;
+    width: 100%;
 }
 
 .journey-image::before {
     content: "";
     position: absolute;
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
     background: var(--pink-light);
     border-radius: 50%;
-    top: -35px;
-    left: -35px;
+    top: -25px;
+    left: -25px;
+    z-index: 0;
 }
 
 .journey-image::after {
     content: "";
     position: absolute;
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
     background: var(--sage-light);
     border-radius: 50%;
-    bottom: -30px;
-    right: -30px;
+    bottom: -25px;
+    right: -25px;
+    z-index: 0;
 }
 
 .journey-image-inner {
     position: relative;
-    z-index: 2;
-    height: 620px;
-    border-radius: 180px 180px 24px 24px;
+    z-index: 1;
+    height: 560px;
+    border-radius: 220px 220px 20px 20px;
     overflow: hidden;
 
     background:
         linear-gradient(
-            rgba(190,145,155,.15),
-            rgba(70,80,60,.15)
+            rgba(190,145,155,.10),
+            rgba(70,80,60,.10)
         ),
         url("tati.jpeg");
 
     background-size: cover;
     background-position: center;
-
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding: 35px;
-}
-
-.journey-image-inner span {
-    font-family: var(--serif);
-    font-size: 5rem;
-    color: rgba(255,255,255,.9);
-    text-shadow: 0 4px 20px rgba(0,0,0,.2);
 }
 
 
-/* TEXT */
+/* =========================
+   JOURNEY TEXT
+========================= */
 
 .journey-content {
     max-width: 620px;
+    padding-top: 10px;
+}
+
+.journey-content .eyebrow {
+    margin-bottom: 10px;
 }
 
 .journey-content h3 {
     font-family: var(--serif);
-    font-size: clamp(2.8rem, 5vw, 4.2rem);
+    font-size: clamp(2.8rem, 4vw, 4rem);
     font-weight: 500;
     line-height: 1;
-    margin: 10px 0 30px;
+    margin: 0 0 30px;
 }
 
 .journey-content > p:not(.eyebrow) {
     color: var(--muted);
-    font-size: .98rem;
+    font-size: .95rem;
     line-height: 1.85;
-    margin-bottom: 20px;
+    margin: 0 0 20px;
 }
 
 
-/* QUOTE */
+/* =========================
+   QUOTE
+========================= */
 
 .journey-quote {
-    margin-top: 35px;
-    padding: 28px 30px;
+    margin-top: 32px;
+    padding: 25px 28px;
     background: var(--pink-light);
     border-left: 3px solid var(--gold);
 }
@@ -535,54 +575,9 @@ footer p{
 .journey-quote p {
     margin: 0;
     font-family: var(--serif);
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     line-height: 1.5;
     color: var(--ink);
-}
-
-
-/* MOBILE */
-
-@media (max-width: 800px) {
-
-    .about-intro {
-        margin-bottom: 55px;
-    }
-
-    .journey-layout {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
-
-    .journey-image {
-        min-height: 420px;
-    }
-
-    .journey-image-inner {
-        height: 420px;
-    }
-
-}
-
-@media (max-width: 500px) {
-
-    .about-intro h2 {
-        font-size: 3rem;
-    }
-
-    .journey-image {
-        min-height: 360px;
-    }
-
-    .journey-image-inner {
-        height: 360px;
-        border-radius: 120px 120px 20px 20px;
-    }
-
-    .journey-content h3 {
-        font-size: 3rem;
-    }
-
 }
 /* =========================
    RESPONSIVE SERVICES
