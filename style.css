@@ -906,3 +906,152 @@ footer p {
         width: 100px;
     }
 }
+/* =========================
+   REVIEWS
+========================= */
+
+.reviews-section {
+    background: var(--paper);
+    position: relative;
+}
+
+.reviews-heading {
+    max-width: 760px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.reviews-heading .eyebrow {
+    margin-bottom: 15px;
+}
+
+.reviews-heading h2 {
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.reviews-heading > p:last-child {
+    max-width: 620px;
+    margin: 0 auto;
+    color: var(--muted);
+    font-size: 1rem;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    align-items: stretch;
+}
+
+.review-card {
+    position: relative;
+    background: var(--white);
+    padding: 38px 34px 32px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.review-card::before {
+    content: "“";
+    position: absolute;
+    top: 12px;
+    right: 25px;
+    font-family: var(--serif);
+    font-size: 5rem;
+    line-height: 1;
+    color: var(--sakura);
+}
+
+.review-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(50, 38, 28, .12);
+}
+
+.review-stars {
+    color: var(--gold);
+    letter-spacing: 4px;
+    font-size: .9rem;
+    margin-bottom: 22px;
+}
+
+.review-card blockquote {
+    margin: 0;
+    color: var(--muted);
+    font-size: .93rem;
+    line-height: 1.85;
+    flex: 1;
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+    color: var(--text);
+    font-size: .85rem;
+}
+
+.review-line {
+    display: block;
+    width: 28px;
+    height: 1px;
+    background: var(--gold);
+}
+
+.review-author strong {
+    font-weight: 600;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    .review-card {
+        padding: 35px;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .reviews-section {
+        padding: 80px 0;
+    }
+
+    .reviews-heading {
+        margin-bottom: 45px;
+    }
+
+    .reviews-heading h2 {
+        font-size: 3.2rem;
+    }
+
+    .reviews-grid {
+        gap: 20px;
+    }
+
+    .review-card {
+        padding: 30px 25px;
+    }
+
+    .review-card blockquote {
+        font-size: .9rem;
+    }
+
+}
